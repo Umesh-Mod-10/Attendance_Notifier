@@ -1,0 +1,10 @@
+# Attendence Notifier
+
+In this program, we would see the interface part which is the front end of this application. I have coded two layouts namely a left column and right column. In the left layout, I have coded for the organization logo and Name of the organization keeping them inline. Then an input box with a title for it connected with a button for performing the operation. The Add button does the job of adding the value to the empty list which stores all the values entered by the user. I have also prevented, adding duplicate values to the list which would prevent from overwriting the message to that user. Then on the right column, we have a listbox which displays the entered register number with a text describing it. This has 2 buttons, Remove and Send. The Remove Button removes the selected value from the listbox and the list too. The Send Button is used to send the respective messages to the register number phone number which are displayed in the listbox. At the bottom, a Exit Button is present which is used to exit the program.
+
+After clicking the Send Button the list which had the stored input value is compared with the column of the student detail file. The file is read by Pandas package and its register number column is accessed and converted into a list. The input value list would have data in integer data type and the file would have in string data type. Thus the file list would be converted into integer data type and the comparison between them takes place. By this the index values of the register numbers present in the input, are stored in a new list. By this index values, the other corresponding details of the student is accessed for the message.
+
+For sending the message I used a simple sendwhatmsg_instantly code and the code sends all the messages automatically. After sending all messages, a new popup opens and displays the completion of the process.
+
+For more details check out my medium blog for more details:
+https://medium.com/@umesh.ramanathan2004/attendance-notifier-using-pywhatkit-pandas-pysimplegui-820195cd0908 
